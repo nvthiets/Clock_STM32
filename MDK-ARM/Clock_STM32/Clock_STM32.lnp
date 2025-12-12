@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"clock_stm32\startup_stm32f103xb.o"
+"clock_stm32\ds3231.o"
+"clock_stm32\main.o"
+"clock_stm32\stm32f1xx_it.o"
+"clock_stm32\stm32f1xx_hal_msp.o"
+"clock_stm32\stm32f1xx_hal_gpio_ex.o"
+"clock_stm32\stm32f1xx_hal_i2c.o"
+"clock_stm32\stm32f1xx_hal.o"
+"clock_stm32\stm32f1xx_hal_rcc.o"
+"clock_stm32\stm32f1xx_hal_rcc_ex.o"
+"clock_stm32\stm32f1xx_hal_gpio.o"
+"clock_stm32\stm32f1xx_hal_dma.o"
+"clock_stm32\stm32f1xx_hal_cortex.o"
+"clock_stm32\stm32f1xx_hal_pwr.o"
+"clock_stm32\stm32f1xx_hal_flash.o"
+"clock_stm32\stm32f1xx_hal_flash_ex.o"
+"clock_stm32\stm32f1xx_hal_exti.o"
+"clock_stm32\stm32f1xx_hal_tim.o"
+"clock_stm32\stm32f1xx_hal_tim_ex.o"
+"clock_stm32\system_stm32f1xx.o"
+--strict --scatter "Clock_STM32\Clock_STM32.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Clock_STM32.map" -o Clock_STM32\Clock_STM32.axf
